@@ -1,7 +1,4 @@
-
-
-
-#ifndef _bit_handling_                                       // ¬ Єа®бл ¤«п ЎЁв®ўле ®ЇҐа жЁ©
+#ifndef _bit_handling_  // РњР°РєСЂРѕСЃС‹ РґР»СЏ Р±РёС‚РѕРІС‹С… РѕРїРµСЂР°С†РёР№
 #define _bit_handling_
 #define bit(n)		(1 << (n))
 #define setbit(p,n)	(p|=bit(n))

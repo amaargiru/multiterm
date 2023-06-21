@@ -1,9 +1,8 @@
-
-
-
-#ifndef _delay_handling_                                       // макросы для задержек
+#ifndef _delay_handling_  // ╨Ь╨░╨║╤А╨╛╤Б╤Л ╨┤╨╗╤П ╨╖╨░╨┤╨╡╤А╨╢╨╡╨║
 #define _delay_handling_
-#define MasterClock 8000000                                  // частота кварца - важно !!!
-#define delay_us(c) __delay_cycles(MasterClock/1000000*c);   // микросекундная задержка
-#define delay_ms(c) __delay_cycles(MasterClock/1000*c);      // миллисекундная зажержка
+
+#define MasterClock 18432000  // ╨з╨░╤Б╤В╨╛╤В╨░ ╨║╨▓╨░╤А╤Ж╨░
+
+#define delay_us(c) __delay_cycles(MasterClock/1000000*c);  // ╨Ь╨╕╨║╤А╨╛╤Б╨╡╨║╤Г╨╜╨┤╨╜╨░╤П ╨╖╨░╨┤╨╡╤А╨╢╨║╨░
+#define delay_ms(c) __delay_cycles(MasterClock/1000*c);  // ╨Ь╨╕╨╗╨╗╨╕╤Б╨╡╨║╤Г╨╜╨┤╨╜╨░╤П ╨╖╨░╨┤╨╡╤А╨╢╨║╨░
 #endif
